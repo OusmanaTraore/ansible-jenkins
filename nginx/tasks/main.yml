@@ -27,7 +27,6 @@
     mode: 0660
   notify:
     - reload nginx
-
 - name: Ensure nginx service is running as configured.
   service:
     name: nginx
