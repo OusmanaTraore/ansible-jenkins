@@ -20,14 +20,16 @@
   template:
     src: "{{ nginx_conf_template }}"
     dest: "{{ nginx_conf_file_path }}"
-    owner: morad
-    group: "{{ root_group }}"
+    group: root
+ #   group: "{{ root_group }}"
+    owner: root
+#    owner: morad
     mode: 0660
   notify:
     - reload nginx
 
-#- name: Ensure nginx service is running as configured.
-#  service:
-#    name: nginx
-#    state: "{{ nginx_service_state }}"
-#    enabled: "{{ nginx_service_enabled }}"
+- name: Ensure nginx service is running as configured.
+  service:
+    name: nginx
+    state: "{{ nginx_service_state }}"
+    enabled: "{{ nginx_service_enabled }}"

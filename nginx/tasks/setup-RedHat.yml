@@ -3,8 +3,10 @@
   template:
     src: nginx.repo.j2
     dest: /etc/yum.repos.d/nginx.repo
-    owner:  morad
-    group:  morad
+    owner: root 
+    group: root
+   # owner: morad
+   # group: morad
     mode: 0640
   when: nginx_yum_repo_enabled | bool
   
