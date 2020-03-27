@@ -1,5 +1,5 @@
 ---
-- hosts: server
+- hosts: localhost
   become: yes
   remote_user: root
   roles:
