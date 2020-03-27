@@ -1,4 +1,4 @@
 [server]
-serveur3_Test    ansible_port=2226 ansible_host=192.168.56.1    ansible_user=jenkins
-serveur2_Slave   ansible_port=2225 ansible_host=192.168.56.1    ansible_user=jenkins
+serveur3_Test    ansible_port=22 ansible_host=192.168.56.1    ansible_user=jenkins
+serveur2_Slave   ansible_port=2225 ansible_host=192.168.56.1    ansible_user=vagrant
 serveur1_Master  ansible_port=2224 ansible_host=192.168.56.1    ansible_user=jenkins
