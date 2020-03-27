@@ -1,2 +1,2 @@
 [server]
-serveur2_Slave  ansible_port=2225 ansible_host=192.168.56.1    ansible_user=jenkins
+serveur2_Slave  ansible_port=2224 ansible_host=192.168.56.1    ansible_user=jenkins
