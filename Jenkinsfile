@@ -7,7 +7,7 @@ node {
             colorized: true ,
             become: true ,
             playbook: 'playbook.yml',
-            inventory: 'inventory.yml',
+            inventory: '${HOST},',
             extras: '--extra-vars "mavariable=${MAVARIABLE}"'
         )
     }
