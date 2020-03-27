@@ -8,5 +8,6 @@ node {
             become: true,
             playbook: 'playbook.yml',
             inventory: 'hosts.yml'
+        }
     }
 }
